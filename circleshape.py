@@ -20,7 +20,11 @@ class CircleShape(pygame.sprite.Sprite):
     def update(self, dt):
         #implementations must override
         pass
+<<<<<<< HEAD
     
     def hit_check(self, target):
         distance = pygame.math.Vector2(self.position).distance_to(target.position)
         return distance < self.radius + target.radius
+=======
+    
+>>>>>>> 6888355 (Created and drew player)
