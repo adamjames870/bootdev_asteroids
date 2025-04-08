@@ -21,3 +21,6 @@ class CircleShape(pygame.sprite.Sprite):
         #implementations must override
         pass
     
+    def hit_check(self, target):
+        distance = pygame.math.Vector2(self.position).distance_to(target.position)
+        return distance < self.radius + target.radius
